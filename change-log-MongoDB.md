@@ -2,11 +2,9 @@
 Document for Medium MongoDB API updates
 -->
 
-### Transaction commands
-> [!NOTE]
-> Multi-document transactions are only supported within a single non-sharded collection. Cross-collection and cross-shard multi-document transactions are not yet supported in the API for MongoDB.
+### March Updates
 
-| Command | Supported |
-|---------|---------|
-| abortTransaction | Yes |
-| commitTransaction | Yes |
+## Use nameof(MongoNativeRbacControlPlaneUtilities) for FabricClient
+Minor change to use the standard approach of utilizing the nameof expression for the component name when creating a fabric client facade.
+
+
