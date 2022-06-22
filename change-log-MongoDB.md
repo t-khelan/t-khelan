@@ -2,7 +2,17 @@
 Document for Medium MongoDB API updates
 -->
 
-## March 2022 Updates
+## Jan- April 2022 Updates
+
+### Support $expr in Mongo 3.6 and 4.0.
+
+This change adds support for both in memory and backend $expr. Furthermore we now have the infra to support compute only query operators.
+
+This will allow us to support 3.6 style $lookup. There are future improvement available including more push down, point lookup, and _id/shard key constraints.
+
+### support for rbac and $merge stage.
+
+### Add Hyperbolic trigonometric operators
 
 ### Use nameof(MongoNativeRbacControlPlaneUtilities) for FabricClient
 Minor change to use the standard approach of utilizing the nameof expression for the component name when creating a fabric client facade.
